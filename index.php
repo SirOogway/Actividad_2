@@ -10,7 +10,7 @@
 
 <body>
     <?php
-    <!-- Ingreso la información de cada persona -->
+    // Ingreso la información de cada persona
     $header = array("Nombre", "Dirección", "Teléfono", "Color", "Significado");
     $jesus = array("Jesús", "Carrea 7B", "300214565", "Azul", "Cielo");
     $maria = array("Maria", "Carrea 8H", "321231567", "Amarillo", "Pollitos");
@@ -20,7 +20,7 @@
     $jose = array("José", "Carrea 2B", "465645656", "Verde", "Hulk");
     $alfonso = array("Alfonso", "Carrea 54F", "466546546", "Rosa", "Fresas");
     $alfonsa = array("Alfonsa", "Carrea 55G", "577657657", "Rosa", "Flor");
-    <!-- Asigno la información al array personas -->
+    //Asigno la información al array personas
     $personas = array($jesus, $maria, $carlos, $yamileth, $juana, $jose, $alfonso, $alfonsa);
 
     ?>
@@ -92,7 +92,7 @@
                 $penultimate_index = array_key_last($personas[0]) - 1;
                 for ($i = 0; $i < count($personas); $i++) {
                     $persona = $personas[$i];
-                    <!-- Aquí realizo el filtrado con el condicional if -->
+                    // Aquí realizo el filtrado con el condicional if
                     if ($persona[$penultimate_index] == "Amarillo") {
                         echo '<tr class="table-warning">';
                         foreach ($persona as $info) {
